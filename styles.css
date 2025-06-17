@@ -17,11 +17,11 @@ h1 {
     font-style: normal;
     color: #4E598C;
     margin: 0;
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
 }
 
 p {
-    font-size: min(7vw, 3vh);
+    font-size: min(6vw, 3vh);
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -72,7 +72,7 @@ textarea {
     outline: none;
     border: .15rem solid #4E598C;
     border-radius: .2rem;
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
     resize: none;
 }
 textarea::placeholder {
