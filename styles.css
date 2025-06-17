@@ -15,7 +15,7 @@ div#attachment_container {
     gap: 1rem;
     /* border: 1px solid salmon; */
     margin: 0;
-    margin-bottom: min(2vh, 4vw);
+    margin-bottom: min(1.5vh, 3vw);
     padding: 0;
 }
 
@@ -40,7 +40,7 @@ p {
     width: min(80vw, 90vh);
     color: #4E598C;
     margin: 0;
-    margin-bottom: min(3vh, 6vw);
+    margin-bottom: min(2.5vh, 5vw);
 }
 
 p#attachment_text {
@@ -112,7 +112,7 @@ input#user_field {
     outline: none;
     border: min(0.22vh, 0.4vw) solid #4E598C;
     border-radius: .2rem;
-    margin-bottom: min(2vh, 4vw);
+    margin-bottom: min(1.5vh, 3vw);
 }
 
 p#attachment_text.red {

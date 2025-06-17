@@ -19,14 +19,14 @@ window.addEventListener("load", (event) => {
 
         document.getElementById("files_holder").innerHTML = '';
 
-        for(var i = 0; i < this.files.length; i++) {
-            if(this.files[i].size >= 5000000-1) {
-                document.getElementById("attachment_text").innerHTML = "File(s) exceed 5MB!";
-                document.getElementById("attachment_text").style.display = "block";
-                document.getElementById("attachment_text").classList.add("red");
-                return;
-            }
-        }
+        // for(var i = 0; i < this.files.length; i++) {
+        //     if(this.files[i].size >= 5000000-1) {
+        //         document.getElementById("attachment_text").innerHTML = "File(s) exceed 5MB!";
+        //         document.getElementById("attachment_text").style.display = "block";
+        //         document.getElementById("attachment_text").classList.add("red");
+        //         //return;
+        //     }
+        // }
 
         for(var i = 0; i < this.files.length; i++) {
             const newFileElement = document.createElement("input");
