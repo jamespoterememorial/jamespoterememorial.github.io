@@ -1,0 +1,89 @@
+#container {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 4vh;
+    /* border: 2px dotted slateblue; */
+}
+
+h1 {
+    width: min(90vw, 120vh);
+    font-size: min(11vw, 7vh);
+    /* border: 1px solid red; */
+    font-family: "Playfair Display SC", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #4E598C;
+    margin: 0;
+    margin-bottom: 4vh;
+}
+
+p {
+    font-size: min(7vw, 3vh);
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    width: min(70vw, 80vh);
+    color: #4E598C;
+    margin: 0;
+    margin-bottom: 4vh;
+}
+
+button {
+    font-size: min(7vw, 3vh);
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    width: min(65vw, 50vh);
+    height: min(25vw, 10vh);
+    color: #4E598C;
+    border: .15rem solid #4E598C;
+    outline: none;
+    background: white;
+    margin: 0;
+    padding: 1rem;
+    border-radius: .2rem;
+    margin-bottom: 2vh;
+    transition: all 100ms ease-out;
+}
+
+button:hover {
+    background: #4E598C;
+    color: white;
+    border: .15rem solid transparent;
+    border-radius: .2rem;
+}
+
+textarea {
+    font-size: min(7vw, 3vh);
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    width: min(70vw, 80vh);
+    height: min(25vw, 10vh);
+    color: #4E598C;
+    margin: 0;
+    padding: 1rem;
+    outline: none;
+    border: .15rem solid #4E598C;
+    border-radius: .2rem;
+    margin-bottom: 4vh;
+    resize: none;
+}
+textarea::placeholder {
+    color: rgba(78, 89, 140, 0.5);
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgba(78, 89, 140, 0.5);
+  margin: 2vh 0;
+  padding: 0;
+}
