@@ -98,7 +98,7 @@ textarea {
     resize: none;
 }
 
-input#user_name {
+input#user_field {
     font-size: min(4vw, 3vh);
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
