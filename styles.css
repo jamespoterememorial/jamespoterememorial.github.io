@@ -1,4 +1,4 @@
-#container {
+div#container {
     display: block;
     position: absolute;
     top: 0;
@@ -6,6 +6,17 @@
     transform: translate(-50%, 0);
     margin-top: min(4vh, 4vw);
     /* border: 2px dotted slateblue; */
+}
+
+div#attachment_container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    /* border: 1px solid salmon; */
+    margin: 0;
+    margin-bottom: min(2vh, 4vw);
+    padding: 0;
 }
 
 h1 {
@@ -21,15 +32,22 @@ h1 {
 }
 
 p {
-    font-size: min(5vw, 3vh);
+    font-size: min(4vw, 3.5vh);
     font-family: "Work Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    width: min(70vw, 80vh);
+    width: min(80vw, 90vh);
     color: #4E598C;
     margin: 0;
     margin-bottom: min(3vh, 6vw);
+}
+
+p#attachment_text {
+    font-size: min(3vw, 3vh);
+    color: rgba(78, 89, 140, 0.5);
+    width: auto;
+    /* border: 1px solid green; */
 }
 
 button {
@@ -39,16 +57,20 @@ button {
     font-weight: 700;
     font-style: normal;
     width: min(60vw, 50vh);
-    height: min(15vw, 8vh);
+    height: min(12vw, 10vh);
     color: #4E598C;
-    border: .15rem solid #4E598C;
+    border: min(0.22vh, 0.4vw) solid #4E598C;
     outline: none;
     background: white;
     margin: 0;
-    padding: 1rem;
+    padding: 0;
     border-radius: .2rem;
     margin-bottom: min(2vh, 4vw);
     transition: all 100ms ease-out;
+}
+
+button#attachment_button {
+    margin-bottom: 0;
 }
 
 button:hover {
@@ -68,14 +90,36 @@ textarea {
     height: min(20vw, 10vh);
     color: #4E598C;
     margin: 0;
-    padding: 1.25rem;
+    padding: min(3vh, 4vw);
     outline: none;
-    border: .15rem solid #4E598C;
+    border: min(0.22vh, 0.4vw) solid #4E598C;
     border-radius: .2rem;
     margin-bottom: min(1vh, 2vw);
     resize: none;
 }
-textarea::placeholder {
+
+input#user_name {
+    font-size: min(4vw, 3vh);
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    width: min(70vw, 80vh);
+    height: min(8vw, 4vh);
+    color: #4E598C;
+    margin: 0;
+    padding: min(3vh, 4vw);
+    outline: none;
+    border: min(0.22vh, 0.4vw) solid #4E598C;
+    border-radius: .2rem;
+    margin-bottom: min(2vh, 4vw);
+}
+
+p#attachment_text.red {
+    color: #8C4E4F;
+}
+
+textarea::placeholder, input::placeholder {
     color: rgba(78, 89, 140, 0.5);
 }
 
