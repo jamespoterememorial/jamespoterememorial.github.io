@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>James Potere Memorial</title>
+        <title>Jimmy Potere Memorial</title>
         <link rel="stylesheet" href="styles.css">
         <script src="script.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,12 +10,37 @@
     </head>
     <body>
         <div id="container">
-            <h1>James Potere Memorial</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <button>Attach images ＋</button>
-            <textarea placeholder="Write your story about James here..."></textarea>
-            <hr>
-            <button>Send email ↴</button>
+            <h1>Jimmy Potere Memorial</h1>
+            <p>
+                Hi! We are creating a memory book for Natalie and Nathan that celebrates Jimmy's life.
+                If you have any favorite memories, funny stories, or photos of Jimmy,
+                please feel free to share them here and we will give this gift to Natalie and Nathan to help them to know and
+                remember their father and our friend.
+            </p>
+            <input id="attachment_input" type="file" accept="image/*" multiple style="display: none;">
+            <form action="https://formsubmit.co/breakfield2003@gmail.com" method="POST" enctype="multipart/form-data">
+                
+                <div id="attachment_container">
+                    <button type="button" id="attachment_button">Attach images ＋</button>
+                    <p id="attachment_text" style="display: none;">(0 files attached)</p>
+                </div>
+
+                <div id="files_holder" style="display: none;">
+                    <!--file elements go here-->
+                </div>
+
+                <!--rukona-->
+                <input type="hidden" name="_url" value="https://jamespoterememorial.github.io/"> <!--url-->
+                <input type="hidden" name="_honey" style="display:none !important"> <!--honeypot-->
+                <input type="hidden" name="_captcha" value="false"> <!--disable reCAPTCHA-->
+
+                <input name="user_name" type="text" id="user_name" placeholder="First name, last name"></textarea>
+                <textarea name="user_message" id="user_text" placeholder="Share your story, memory, or kind words about Jimmy here..."></textarea>
+                
+                <hr>
+
+                <button type="submit" id="email_button">Submit ➞</button>
+            </form>
         </div>
     </body>
 </html>
